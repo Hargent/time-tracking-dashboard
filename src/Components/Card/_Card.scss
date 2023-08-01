@@ -1,0 +1,114 @@
+.card {
+	&__container {
+		display: grid;
+		grid-template-rows: 20% 80%;
+		// grid-template-rows: 1fr 3fr;
+
+		position: relative;
+		border-radius: 20px;
+
+		&.work {
+			background-color: $Work-color;
+		}
+		&.play {
+			background-color: $Play-color;
+		}
+		&.social {
+			background-color: $Social-color;
+		}
+		&.exercise {
+			background-color: $Exercise-color;
+		}
+		&.study {
+			background-color: $Study-color;
+		}
+		&.self.care {
+			background-color: $Self-care-color;
+		}
+
+		@media only screen and (max-width: 37.5em) {
+			grid-template-rows: 30% 70%;
+		}
+	}
+	&__header,
+	&__content {
+		overflow: hidden;
+		position: relative;
+	}
+	&__header {
+		// border-bottom-left-radius: 0;
+		// border-bottom-right-radius: 0;
+		// background-color: red;
+
+		z-index: 1;
+		&--icon {
+			position: absolute;
+			right: 10%;
+			top: 0;
+			transform: translate(-50%, -10%);
+			width: 30%;
+		}
+	}
+
+	&__content {
+		// transform: translateY(-25%);
+		z-index: 2;
+		background-color: $Dark-blue;
+		padding: 2rem;
+		border-radius: 20px;
+
+		// height: max-content;
+
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+
+		color: #fff;
+		text-transform: capitalize;
+		font-size: 1.5rem;
+		// padding-bottom: 0%;
+
+		& > * {
+			margin-bottom: 1.5rem;
+		}
+
+		&__title {
+			display: flex;
+			align-items: center;
+			width: 100%;
+
+			& > *:first-child {
+				margin-right: auto;
+				font-family: Rubik-medium;
+			}
+		}
+		&__details {
+			// margin-bottom: 10rem;
+
+			& > h1 {
+				font: {
+					// size: 5rem;
+					family: Rubik-light;
+				}
+			}
+			& > * {
+				margin-bottom: 1.5rem;
+			}
+			& > *:last-child {
+				color: $Pale-Blue;
+				font: {
+					family: Rubik-regular;
+				}
+				@media only screen and (max-width: 37.5em) {
+					text-align: right;
+				}
+			}
+			@media only screen and (max-width: 37.5em) {
+				width: 100%;
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+			}
+		}
+	}
+}

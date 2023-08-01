@@ -7,12 +7,14 @@ const Profile = props => {
 		<div className="profile__container">
 			<div className="profile__details">
 				<img src={ProfileImage} alt="Jeremy" />
-				<p>Report for </p>
-				<h1>Jeremy Robson</h1>
+				<div className="profile__details-owner">
+					<p>Report for </p>
+					<h1>Jeremy Robson</h1>
+				</div>
 			</div>
 			<div className="profile__duration">
 				<p>Daily</p>
-				<p>Weekly</p>
+				<p className="current">Weekly</p>
 				<p>Monthly</p>
 			</div>
 		</div>

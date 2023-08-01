@@ -1,0 +1,32 @@
+@import "./variables";
+
+* {
+	box-sizing: inherit;
+}
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-size: 62.5%;
+	box-sizing: border-box;
+	@media only screen and (max-width: 37.5em) {
+		font-size: 50%;
+	}
+}
+
+body {
+	box-sizing: inherit;
+
+	background-color: rgb(3, 0, 0);
+
+	width: 100%;
+
+	// position: relative;
+}
+// IMPORTS
+@import "../src/App/App"; /*# sourceMappin
+gURL=index.css.map */

@@ -1,1 +1,348 @@
-/*# sourceMappingURL=index.css.map */
+@font-face {
+  font-family: Rubik-light;
+  src: url(../src/Assets/Fonts/Rubik/static/Rubik-Light.ttf);
+}
+@font-face {
+  font-family: Rubik-regular;
+  src: url(../src/Assets/Fonts/Rubik/static/Rubik-Regular.ttf);
+}
+@font-face {
+  font-family: Rubik-medium;
+  src: url(../src/Assets/Fonts/Rubik/static/Rubik-Medium.ttf);
+}
+* {
+  box-sizing: inherit;
+}
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  box-sizing: inherit;
+}
+
+* {
+  box-sizing: inherit;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+@media only screen and (max-width: 37.5em) {
+  html {
+    font-size: 50%;
+  }
+}
+
+body {
+  box-sizing: inherit;
+  background-color: rgb(3, 0, 0);
+  width: 100%;
+}
+
+@media only screen and (max-width: 75em) {
+  .app {
+    width: 100%;
+  }
+}
+.app__container {
+  width: 80%;
+  max-width: 100rem;
+  min-width: 80rem;
+  background-color: hsl(226, 43%, 10%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  -moz-column-gap: 4rem;
+       column-gap: 4rem;
+}
+@media only screen and (max-width: 56.25em) {
+  .app__container {
+    grid-template-rows: 1fr 1fr 1fr;
+    row-gap: 4rem;
+    min-width: 50rem;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .app__container {
+    width: 100%;
+    min-width: 30rem;
+    padding: 3rem;
+  }
+}
+@media only screen and (max-width: 25em) {
+  .app__container {
+    grid-template-rows: max-content 1fr 1fr;
+    position: relative;
+    top: 0%;
+    left: 0%;
+    transform: translate(0, 0);
+  }
+}
+.app__container > *:first-child {
+  grid-row: 1/-1;
+  grid-column: 1/2;
+}
+@media only screen and (max-width: 56.25em) {
+  .app__container > *:first-child {
+    grid-row: 1/2;
+    grid-column: 2/span 2;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .app__container > *:first-child {
+    grid-column: 1/-1;
+    width: 80%;
+    margin: auto;
+  }
+}
+@media only screen and (max-width: 18.75em) {
+  .app__container > *:first-child {
+    width: 100%;
+  }
+}
+.app__container > *:last-child {
+  grid-row: 1/-1;
+  grid-column: 2/-1;
+}
+@media only screen and (max-width: 56.25em) {
+  .app__container > *:last-child {
+    grid-column: 1/-1;
+    grid-row: 2/-1;
+  }
+}
+
+.profile__container {
+  display: grid;
+  grid-template-rows: 2fr 1fr;
+  border-radius: 20px;
+  background-color: hsl(235, 46%, 20%);
+  border: none;
+}
+.profile__details, .profile__duration {
+  padding: 3rem;
+}
+@media only screen and (max-width: 56.25em) {
+  .profile__details, .profile__duration {
+    padding: 2rem;
+  }
+}
+.profile__details {
+  background-color: hsl(246, 80%, 60%);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  z-index: 2;
+  border-radius: 20px;
+}
+@media only screen and (max-width: 56.25em) {
+  .profile__details {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+.profile__details > * {
+  margin-bottom: 4rem;
+}
+@media only screen and (max-width: 56.25em) {
+  .profile__details > * {
+    margin-bottom: 0;
+  }
+}
+.profile__details img {
+  width: 40%;
+  border: 4px solid hsl(236, 100%, 87%);
+  border-radius: 50%;
+}
+@media only screen and (max-width: 56.25em) {
+  .profile__details img {
+    width: 20%;
+    margin-right: 2.5rem;
+  }
+}
+.profile__details-owner {
+  font-size: 1.5rem;
+  font-family: Rubik-light;
+  color: hsl(236, 100%, 87%);
+}
+.profile__details-owner h1 {
+  color: #fff;
+}
+@media only screen and (max-width: 56.25em) {
+  .profile__details-owner h1 {
+    font-size: 3rem;
+  }
+}
+.profile__details-owner p {
+  font-family: Rubik-regular;
+}
+@media only screen and (max-width: 56.25em) {
+  .profile__details-owner {
+    text-align: right;
+  }
+}
+.profile__duration {
+  border-top-left-radius: 0%;
+  border-top-right-radius: 0%;
+  transform: translateY(-10%);
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding-bottom: 0;
+  text-decoration: none;
+  color: hsl(235, 45%, 61%);
+  font-size: 1.5rem;
+  font-family: Rubik-regular;
+}
+@media only screen and (max-width: 56.25em) {
+  .profile__duration {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+.profile__duration > * {
+  margin-bottom: 2rem;
+  text-transform: capitalize;
+}
+.profile__duration p {
+  cursor: pointer;
+}
+.profile__duration p:hover {
+  color: #fff;
+}
+.profile__duration .current {
+  color: #fff;
+}
+
+.report__container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2 max-content);
+  gap: 3rem;
+}
+@media only screen and (max-width: 37.5rem) {
+  .report__container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media only screen and (max-width: 25em) {
+  .report__container {
+    grid-template-columns: 1fr;
+  }
+}
+
+.card__container {
+  display: grid;
+  grid-template-rows: 20% 80%;
+  position: relative;
+  border-radius: 20px;
+}
+.card__container.work {
+  background-color: hsl(15, 100%, 70%);
+}
+.card__container.play {
+  background-color: hsl(195, 74%, 62%);
+}
+.card__container.social {
+  background-color: hsl(264, 64%, 52%);
+}
+.card__container.exercise {
+  background-color: hsl(145, 58%, 55%);
+}
+.card__container.study {
+  background-color: hsl(348, 100%, 68%);
+}
+.card__container.self.care {
+  background-color: hsl(43, 84%, 65%);
+}
+@media only screen and (max-width: 37.5em) {
+  .card__container {
+    grid-template-rows: 30% 70%;
+  }
+}
+.card__header, .card__content {
+  overflow: hidden;
+  position: relative;
+}
+.card__header {
+  z-index: 1;
+}
+.card__header--icon {
+  position: absolute;
+  right: 10%;
+  top: 0;
+  transform: translate(-50%, -10%);
+  width: 30%;
+}
+.card__content {
+  z-index: 2;
+  background-color: hsl(235, 46%, 20%);
+  padding: 2rem;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: #fff;
+  text-transform: capitalize;
+  font-size: 1.5rem;
+}
+.card__content > * {
+  margin-bottom: 1.5rem;
+}
+.card__content__title {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.card__content__title > *:first-child {
+  margin-right: auto;
+  font-family: Rubik-medium;
+}
+.card__content__details > h1 {
+  font-family: Rubik-light;
+}
+.card__content__details > * {
+  margin-bottom: 1.5rem;
+}
+.card__content__details > *:last-child {
+  color: hsl(236, 100%, 87%);
+  font-family: Rubik-regular;
+}
+@media only screen and (max-width: 37.5em) {
+  .card__content__details > *:last-child {
+    text-align: right;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .card__content__details {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+/*# sourceMappin
+gURL=index.css.map *//*# sourceMappingURL=index.css.map */

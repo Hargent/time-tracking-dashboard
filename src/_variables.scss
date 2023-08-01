@@ -1,15 +1,15 @@
 // FONTS
 @font-face {
 	font-family: Rubik-light;
-	src: url(../public/Assets/Fonts/Rubik/static/Rubik-Light.ttf);
+	src: url(../src/Assets/Fonts/Rubik/static/Rubik-Light.ttf);
 }
 @font-face {
 	font-family: Rubik-regular;
-	src: url(../public/Assets/Fonts/Rubik/static/Rubik-Regular.ttf);
+	src: url(../src/Assets/Fonts/Rubik/static/Rubik-Regular.ttf);
 }
 @font-face {
 	font-family: Rubik-medium;
-	src: url(../public/Assets/Fonts/Rubik/static/Rubik-Medium.ttf);
+	src: url(../src/Assets/Fonts/Rubik/static/Rubik-Medium.ttf);
 }
 // WIDTHS
 $Mobile: 375px;
@@ -17,16 +17,16 @@ $Desktop: 1440px;
 
 // COLORS
 $Blue: hsl(246, 80%, 60%);
-$Light-red: hsl(15, 100%, 70%); //(work)
-$Soft-blue: hsl(195, 74%, 62%); //(play)
-$Light-red: hsl(348, 100%, 68%); //(study)
-$Lime-green: hsl(145, 58%, 55%); //(exercise)
-$Violet: hsl(264, 64%, 52%); // (social)
-$Soft-orange: hsl(43, 84%, 65%); //(self care)
+$Work-color: hsl(15, 100%, 70%); //(work)
+$Play-color: hsl(195, 74%, 62%); //(play)
+$Study-color: hsl(348, 100%, 68%); //(study)
+$Exercise-color: hsl(145, 58%, 55%); //(exercise)
+$Social-color: hsl(264, 64%, 52%); // (social)
+$Self-care-color: hsl(43, 84%, 65%); //(self care)
 
 $Very-dark-blue: hsl(226, 43%, 10%);
 $Dark-blue: hsl(235, 46%, 20%);
-$Desaturated-blue: hsl(235, 45%, 61%);
+$De-saturated-blue: hsl(235, 45%, 61%);
 $Pale-Blue: hsl(236, 100%, 87%);
 
 // Typography

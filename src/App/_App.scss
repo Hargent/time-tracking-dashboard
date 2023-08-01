@@ -1,0 +1,87 @@
+.app {
+	// position: relative;
+	// top: 50%;
+	// left: 50%;
+	// transform: translate(-50% -50%);
+
+	// width: 70%;
+	// min-height: 100vh;
+	// margin: auto;
+	// background-color: $Very-dark-blue;
+	// padding: 10rem;
+
+	@media only screen and (max-width: 75em) {
+		width: 100%;
+	}
+
+	&__container {
+		width: 80%;
+		max-width: 100rem;
+		min-width: 80rem;
+		background-color: $Very-dark-blue;
+
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+
+		display: grid;
+		// grid-template-columns: 1fr 2fr;
+		grid-template-columns: repeat(4, 1fr);
+
+		column-gap: 4rem;
+
+		@media only screen and (max-width: 56.25em) {
+			// grid-template-columns: 1fr;
+			grid-template-rows: 1fr 1fr 1fr;
+			row-gap: 4rem;
+			min-width: 50rem;
+		}
+		@media only screen and (max-width: 37.5em) {
+			width: 100%;
+			min-width: 30rem;
+			padding: 3rem;
+		}
+		@media only screen and (max-width: 25em) {
+			grid-template-rows: max-content 1fr 1fr;
+
+			position: relative;
+			top: 0%;
+			left: 0%;
+			transform: translate(0, 0);
+		}
+
+		& > *:first-child {
+			grid-row: 1/-1;
+			grid-column: 1/2;
+			@media only screen and (max-width: 56.25em) {
+				grid-row: 1/2;
+				grid-column: 2 / span 2;
+			}
+			@media only screen and (max-width: 37.5em) {
+				grid-column: 1 / -1;
+
+				width: 80%;
+				margin: auto;
+			}
+			@media only screen and (max-width: 18.75em) {
+				width: 100%;
+			}
+		}
+		& > *:last-child {
+			grid-row: 1/-1;
+			grid-column: 2/-1;
+			@media only screen and (max-width: 56.25em) {
+				grid-column: 1/-1;
+				grid-row: 2/-1;
+			}
+		}
+
+		// @media only screen and (max-width: 50em) {
+		// 	grid-template-columns: 1fr;
+		// 	grid-template-rows: 1fr 2fr;
+		// }
+	}
+}
+@import "../Components/Profile/Profile";
+@import "../Components/Report/Report";
