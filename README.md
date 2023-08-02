@@ -1,6 +1,6 @@
 # Frontend Mentor - Time tracking dashboard solution
 
-This is a solution to the [Time tracking dashboard challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/time-tracking-dashboard-UIQ7167Jw). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
+-   [ ]
 
 ## Table of contents
 
@@ -20,7 +20,7 @@ This is a solution to the [Time tracking dashboard challenge on Frontend Mentor]
 
 ## Overview
 
-### [The challenge](#the-challenge)
+### The challenge
 
 Users should be able to:
 
@@ -65,12 +65,13 @@ Users should be able to:
 
 ### Useful resources
 
--   [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
--   [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+-   [SASS](https://www.example.com) - This helped me in the implementation and use of sass variables.
+-   [React UI](https://react.dev/learn/describing-the-ui) - This is an amazing article which helped me in structuring my app UI using react js library
+-   [CSS Grids](https://css-tricks.com/snippets/css/complete-guide-grid/) - This article really helped me in refreshing my knowledge about css grid flow.
 
 ## Author
 
--   Website - [T](https://www.your-site.com)imileyin David Yemisi
+-   Website - **Timileyin David Yemisi**
 -   Frontend Mentor - [@Hargent](https://www.frontendmentor.io/profile/Hargent)
 -   Twitter - [@_Hargent_](https://www.twitter.com/_Hargent_ "_Hargent_")
 -   LinkdIn - [Timileyin (David) Yemisi](linkedin.com/in/timileyin-yemisi-23219422b)
@@ -79,4 +80,4 @@ Users should be able to:
 
 ## Acknowledgments
 
-In sincere appreciation, I extend my heartfelt gratitude to my esteemed mentor, Hussen Abdullah Abiodun for his invaluable guidance, unwavering support, and inspiring leadership throughout this project.
+In sincere appreciation, I extend my heartfelt gratitude to my esteemed mentor, [Abdullahi Hussein]() for his invaluable guidance, unwavering support, and inspiring leadership throughout this project.
