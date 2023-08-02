@@ -2,6 +2,7 @@
 
 * {
 	box-sizing: inherit;
+	outline: none;
 }
 *,
 *::after,
@@ -21,10 +22,27 @@ html {
 body {
 	box-sizing: inherit;
 
-	background-color: rgb(3, 0, 0);
+	// background-color: rgb(3, 0, 0);
 
+	background-image: linear-gradient(
+		to right,
+		rgb(3, 0, 0) 10%,
+		$Very-dark-blue 10%,
+		$Very-dark-blue 90%,
+		rgb(3, 0, 0) 90%,
+		rgb(3, 0, 0)
+	);
 	width: 100%;
-
+	@media only screen and (max-width: 87.5em) {
+		background-image: linear-gradient(
+			to right,
+			rgb(3, 0, 0) 5%,
+			$Very-dark-blue 5%,
+			$Very-dark-blue 95%,
+			rgb(3, 0, 0) 95%,
+			rgb(3, 0, 0)
+		);
+	}
 	// position: relative;
 }
 // IMPORTS

@@ -29,6 +29,7 @@ body {
 
 * {
   box-sizing: inherit;
+  outline: none;
 }
 
 *,
@@ -50,8 +51,13 @@ html {
 
 body {
   box-sizing: inherit;
-  background-color: rgb(3, 0, 0);
+  background-image: linear-gradient(to right, rgb(3, 0, 0) 10%, hsl(226, 43%, 10%) 10%, hsl(226, 43%, 10%) 90%, rgb(3, 0, 0) 90%, rgb(3, 0, 0));
   width: 100%;
+}
+@media only screen and (max-width: 87.5em) {
+  body {
+    background-image: linear-gradient(to right, rgb(3, 0, 0) 5%, hsl(226, 43%, 10%) 5%, hsl(226, 43%, 10%) 95%, rgb(3, 0, 0) 95%, rgb(3, 0, 0));
+  }
 }
 
 @media only screen and (max-width: 75em) {
@@ -78,6 +84,15 @@ body {
     grid-template-rows: 1fr 1fr 1fr;
     row-gap: 4rem;
     min-width: 50rem;
+  }
+}
+@media only screen and ((max-height: 375px) or (-webkit-min-device-pixel-ratio: 3.1)) {
+  .app__container {
+    position: relative;
+    top: 0%;
+    left: 50%;
+    width: 90%;
+    transform: translate(-50%, 5%);
   }
 }
 @media only screen and (max-width: 37.5em) {
@@ -260,22 +275,22 @@ body {
   border-radius: 20px;
 }
 .card__container.work {
-  background-color: hsl(15, 100%, 70%);
+  background-image: linear-gradient(to bottom, hsl(15, 100%, 70%) 60%, hsl(226, 43%, 10%));
 }
 .card__container.play {
-  background-color: hsl(195, 74%, 62%);
+  background-image: linear-gradient(to bottom, hsl(195, 74%, 62%) 60%, hsl(226, 43%, 10%));
 }
 .card__container.social {
-  background-color: hsl(264, 64%, 52%);
+  background-image: linear-gradient(to bottom, hsl(264, 64%, 52%) 60%, hsl(226, 43%, 10%));
 }
 .card__container.exercise {
-  background-color: hsl(145, 58%, 55%);
+  background-image: linear-gradient(to bottom, hsl(145, 58%, 55%) 60%, hsl(226, 43%, 10%));
 }
 .card__container.study {
-  background-color: hsl(348, 100%, 68%);
+  background-image: linear-gradient(to bottom, hsl(348, 100%, 68%) 60%, hsl(226, 43%, 10%));
 }
 .card__container.self.care {
-  background-color: hsl(43, 84%, 65%);
+  background-image: linear-gradient(to bottom, hsl(43, 84%, 65%) 80%, hsl(226, 43%, 10%));
 }
 @media only screen and (max-width: 37.5em) {
   .card__container {
@@ -307,6 +322,7 @@ body {
   color: #fff;
   text-transform: capitalize;
   font-size: 1.5rem;
+  transition: all 0.5s ease-in-out;
 }
 .card__content > * {
   margin-bottom: 1.5rem;
@@ -319,6 +335,11 @@ body {
 .card__content__title > *:first-child {
   margin-right: auto;
   font-family: Rubik-medium;
+  font-size: 18px;
+}
+.card__content:hover {
+  cursor: pointer;
+  background-color: hsl(237, 40%, 34%);
 }
 .card__content__details > h1 {
   font-family: Rubik-light;
@@ -335,12 +356,28 @@ body {
     text-align: right;
   }
 }
-@media only screen and (max-width: 37.5em) {
+@media only screen and (max-width: 25em) {
   .card__content__details {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
+  }
+}
+.card__content__title--icon {
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+.card__content__title--icon:hover svg > path {
+  fill: #fff !important;
+}
+.card__content__title--icon:hover .card__content {
+  display: none;
+  background-color: hsl(235, 46%, 20%) !important;
+}
+@media only screen and (max-width: 37.5em) {
+  .card__content {
+    padding: 5rem 3rem;
   }
 }
 
