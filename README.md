@@ -80,4 +80,4 @@ Users should be able to:
 
 ## Acknowledgments
 
-In sincere appreciation, I extend my heartfelt gratitude to my esteemed mentor, [Abdullahi Hussein]() for his invaluable guidance, unwavering support, and inspiring leadership throughout this project.
+In sincere appreciation, I extend my heartfelt gratitude to my esteemed mentor, [Abdullahi Hussein](https://twitter.com/hussein_miracle) for his invaluable guidance, unwavering support, and inspiring leadership throughout this project.
