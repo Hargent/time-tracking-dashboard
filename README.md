@@ -30,7 +30,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)![1690950745859](image/README-template/1690950745859.png)![1690951616105](https://file+.vscode-resource.vscode-cdn.net/c%3A/Users/yemis/DEV/Internship/Completed/time-tracking-dashboard/image/README-template/1690951616105.png)![1690951651811](https://file+.vscode-resource.vscode-cdn.net/c%3A/Users/yemis/DEV/Internship/Completed/time-tracking-dashboard/image/README-template/1690951651811.png)
+![](./screenshot.jpg)![1690950745859](image/README-template/1690950745859.png)![1690951616105](image/README-template/1690951616105.png)![1690951651811](image/README-template/1690951651811.png)
 
 ![1690950868992](image/README-template/1690950868992.png)
 
